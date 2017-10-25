@@ -163,3 +163,6 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 69d7d01d14b2cb1bf7ea22ff94f3abfc Assembly-CSharp.dll:Vuforia.DefaultSmartTerrainEventHandler
 d2a2bd333db22f480a8589e167314ecc Assembly-CSharp.dll:Vuforia.UserDefinedTargetBuildingBehaviour
 7cac06ac0eaa7257b831c29e4455ce1b Assembly-CSharp.dll:Vuforia.VuforiaConfiguration
+ad5bf76251707e21187fb22fe83a0213 Assembly-CSharp.dll:DeadMosquito.GoogleMapsView.Demo.GoogleMapsDemo
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:DeadMosquito.GoogleMapsView.Internal.GoogleMapsSceneHelper
+66183f3996de0d29aae51899f42a8464 Assembly-CSharp.dll:.Map

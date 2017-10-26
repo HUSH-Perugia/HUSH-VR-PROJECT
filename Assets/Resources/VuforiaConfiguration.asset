@@ -14,11 +14,11 @@ MonoBehaviour:
   vuforia:
     vuforiaLicenseKey: AcUfnL//////AAAAGWLKbwKM3U/nvNwbjho7feQPWA8zBvjKqq+tpzv661+SoHDaLzV55wm4GPZnP2l3wtRpdCNQndsK8Nbad28FQydoPEAOxfs/4ONEM48kXk1F5w5lAN25P5a/54FtkGI9NN3+Bc6HKioOG5I6SR3WvbSRT3oGzoguEZfuXE2D5l1QmZGUoLtMzcvFEfGD46a5rww8bBq8fWWElR+ppTWylieqPLFTA4YtbT09EVoLtMhsVW7n5bfxnRNUp3EkrPiw8xAAj7ctDjA0N/qZEVM8ypReU/lbpFP4Gniy7t8ReFjHDWTRj9kp7wpRSeWjM4/I8ucg7ftIIiT/B11ygvlJ4WZ1G8LT5phvo4sV3AYPOLwQ
     delayedInitialization: 0
-    cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
-    maxSimultaneousObjectTargets: 1
-    useDelayedLoadingObjectTargets: 0
-    cameraDirection: 0
+    cameraDeviceModeSetting: -3
+    maxSimultaneousImageTargets: 5
+    maxSimultaneousObjectTargets: 5
+    useDelayedLoadingObjectTargets: 1
+    cameraDirection: 1
     mirrorVideoBackground: 0
   digitalEyewear:
     cameraOffset: 0.06

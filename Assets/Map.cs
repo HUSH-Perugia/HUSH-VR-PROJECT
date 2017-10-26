@@ -13,6 +13,7 @@ public class Map : MonoBehaviour {
 	private GoogleMapsView gMap = null;
 	private Rect gMapLastRect = new Rect(0,0,0,0);
 	private bool gMapCanChangeSize = true;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -91,6 +92,15 @@ public class Map : MonoBehaviour {
 	void DeleteGMap()
 	{
 		if (gMap != null && gMapCanChangeSize) 
+		{
+			gMap.Dismiss ();
+			gMap = null;
+		}
+	}
+
+	public void DismissGMap()
+	{
+		if (gMap != null) 
 		{
 			gMap.Dismiss ();
 			gMap = null;

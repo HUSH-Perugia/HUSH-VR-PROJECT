@@ -14,6 +14,8 @@ public class Map : MonoBehaviour {
 	private Rect gMapLastRect = new Rect(0,0,0,0);
 	private bool gMapCanChangeSize = true;
 
+	Marker gMarker;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -130,11 +132,11 @@ public class Map : MonoBehaviour {
 		return rect;
 	}
 
-	public static MarkerOptions CreateInitialMarkerOptions()
+	private static MarkerOptions CreateInitialMarkerOptions()
 	{
 		const float LondonLatitude = 51.5285582f;
 		const float LondonLongitude = -0.2417005f;
-		// Create a amrker in London, Great Britain
+		// Create a Marker in London, Great Britain
 		return new MarkerOptions()
 			.Position(new LatLng(LondonLatitude, LondonLongitude))
 			.Icon(ImageDescriptor.FromAsset("map-marker-icon.png")) // image must be in StreamingAssets folder!
@@ -148,5 +150,10 @@ public class Map : MonoBehaviour {
 			.Title("Title Text")
 			.Visible(true)
 			.ZIndex(1f);
+	}
+
+	void AddMarker()
+	{
+		gMarker = gMap.AddMarker(CreateInitialMarkerOptions());
 	}
 }

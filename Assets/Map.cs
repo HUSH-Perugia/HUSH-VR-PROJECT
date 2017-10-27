@@ -74,6 +74,7 @@ public class Map : MonoBehaviour {
 			gMapLastRect = GetScreenCoordinates(uiObjectMap.GetComponent<RectTransform>());
 			//re-create map
 			gMap = new GoogleMapsView(new GoogleMapsOptions());
+			gMap.AddMarker(CreateInitialMarkerOptions());
 			//show
 			gMap.Show(gMapLastRect,OnMapReady);
 		}
@@ -127,5 +128,25 @@ public class Map : MonoBehaviour {
 		rect.x = Mathf.CeilToInt(rect.x);
 		rect.y = Mathf.CeilToInt(rect.y);
 		return rect;
+	}
+
+	public static MarkerOptions CreateInitialMarkerOptions()
+	{
+		const float LondonLatitude = 51.5285582f;
+		const float LondonLongitude = -0.2417005f;
+		// Create a amrker in London, Great Britain
+		return new MarkerOptions()
+			.Position(new LatLng(LondonLatitude, LondonLongitude))
+			.Icon(ImageDescriptor.FromAsset("map-marker-icon.png")) // image must be in StreamingAssets folder!
+			.Alpha(0.5f) // make semi-transparent image
+			.Anchor(0.5f, 1f) // anchor point of the image
+			.InfoWindowAnchor(0.5f, 1f)
+			.Draggable(false)
+			.Flat(false)
+			.Rotation(30f) // Rotate marker a bit
+			.Snippet("Snippet Text")
+			.Title("Title Text")
+			.Visible(true)
+			.ZIndex(1f);
 	}
 }

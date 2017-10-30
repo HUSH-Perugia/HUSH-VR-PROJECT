@@ -76,9 +76,9 @@ public class Map : MonoBehaviour {
 			gMapLastRect = GetScreenCoordinates(uiObjectMap.GetComponent<RectTransform>());
 			//re-create map
 			gMap = new GoogleMapsView(new GoogleMapsOptions());
-			gMap.AddMarker(CreateInitialMarkerOptions());
 			//show
 			gMap.Show(gMapLastRect,OnMapReady);
+			gMap.AddMarker(CreateInitialMarkerOptions());
 		}
 	}
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="prova" size="50.000000 78.916374" />
-    <ImageTarget name="sasso" size="50.000000 27.980770" />
-    <ImageTarget name="unity_test" size="70.000000 46.893204" />
-    <ImageTarget name="stones_hires" size="50.000000 35.000000" />
-  </Tracking>
-</QCARConfig>

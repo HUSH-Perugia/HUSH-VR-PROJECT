@@ -78,6 +78,7 @@ public class Map : MonoBehaviour {
 			gMap = new GoogleMapsView(new GoogleMapsOptions());
 			//show
 			gMap.Show(gMapLastRect,OnMapReady);
+			//when the map is ready we can draw on it
 			gMap.AddMarker(CreateInitialMarkerOptions());
 		}
 	}

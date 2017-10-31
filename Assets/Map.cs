@@ -21,6 +21,8 @@ public class Map : MonoBehaviour {
 	{
 		//Create google map
 		CreateGMap ();
+		//when the map is ready we can draw on it
+		// gMap.AddMarker(CreateInitialMarkerOptions());
 	}
 
 	GoogleMapsOptions CreateMapViewOptions()
@@ -78,8 +80,6 @@ public class Map : MonoBehaviour {
 			gMap = new GoogleMapsView(new GoogleMapsOptions());
 			//show
 			gMap.Show(gMapLastRect,OnMapReady);
-			//when the map is ready we can draw on it
-			gMap.AddMarker(CreateInitialMarkerOptions());
 		}
 	}
 
@@ -90,6 +90,7 @@ public class Map : MonoBehaviour {
 		//Now we can call "DeleteGMap"
 		//Unlock
 		gMapCanChangeSize = true;
+		AddMarker();
 	}
 
 	//Delete map
@@ -146,7 +147,6 @@ public class Map : MonoBehaviour {
 			.InfoWindowAnchor(0.5f, 1f)
 			.Draggable(false)
 			.Flat(false)
-			.Rotation(30f) // Rotate marker a bit
 			.Snippet("Snippet Text")
 			.Title("Title Text")
 			.Visible(true)

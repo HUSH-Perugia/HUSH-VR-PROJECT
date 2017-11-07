@@ -15,4 +15,5 @@ public class TurnOffVuforia : MonoBehaviour {
         //Turn off Vuforia
         VuforiaBehaviour.Instance.enabled = false;
     }
+    
 }

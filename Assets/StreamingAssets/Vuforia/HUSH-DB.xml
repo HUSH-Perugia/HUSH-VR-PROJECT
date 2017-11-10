@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="stones" size="50.000000 35.000000" />
+    <ImageTarget name="to-upload" size="70.000000 39.375000" />
+    <ImageTarget name="target2b_h11-1" size="70.000000 52.500000" />
+    <ImageTarget name="target3_h11-5" size="70.000000 93.310547" />
+    <ImageTarget name="target3_h11-4" size="70.000000 52.500000" />
+    <ImageTarget name="target3_h11-3" size="70.000000 52.500000" />
+    <ImageTarget name="target3_h11-2" size="70.000000 52.500000" />
+    <ImageTarget name="target3_h11-1" size="70.000000 93.310547" />
+    <ImageTarget name="target2_h11-3" size="70.000000 93.310547" />
+    <ImageTarget name="target2_h11-2" size="70.000000 93.310547" />
+    <ImageTarget name="target2_h11-1" size="70.000000 93.310547" />
+    <ImageTarget name="target2_h14-4" size="70.000000 93.310547" />
+    <ImageTarget name="target2_h14-3" size="70.000000 93.310547" />
+    <ImageTarget name="target2_h14-2" size="70.000000 93.310547" />
+    <ImageTarget name="target2_h14-1" size="70.000000 93.310547" />
+    <ImageTarget name="target1_soleggiato_h14-5" size="70.000000 93.333336" />
+    <ImageTarget name="target1_soleggiato_h14-4" size="70.000000 93.369789" />
+    <ImageTarget name="target1_soleggiato_h14-3" size="70.000000 93.310547" />
+    <ImageTarget name="target1_soleggiato_h14-2" size="70.000000 93.310547" />
+    <ImageTarget name="target1_soleggiato_h14-1" size="70.000000 93.378906" />
+    <ImageTarget name="target1_nuvoloso_h14-2" size="70.000000 93.310547" />
+    <ImageTarget name="target1_nuvoloso_h14-3" size="70.000000 93.333336" />
+    <ImageTarget name="target1_nuvoloso_h14-1" size="70.000000 93.310547" />
+  </Tracking>
+</QCARConfig>
